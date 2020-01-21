@@ -1,11 +1,6 @@
 version: "3"
 
 services:
-  ssh-tunnel:
-    build: .
-    ports:
-      - "2020:22"
-    # network_mode: "host"
   nginx:
     image: nginx:1.17.7
     restart: unless-stopped
